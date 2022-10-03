@@ -1,3 +1,11 @@
+# Disclaimer
+
+This repository is just in the process of being set up. This means that
+1. a release with run-time `isabelle-docker-runtime.tar.gz` has not been created yet;
+2. the isabelle-x11 docker/podman image has not been pushed yet.
+
+We should have this done in the next day or two!
+
 # Isabelle docker image with X11 support
 
 This repository contains resources (Dockerfile, scripts, makefile, etc.) to create a docker/podman image with **X11 support** for the current version of the Isabelle theorem prover ([Isabelle2021-1](https://isabelle.in.tum.de/)). The image can thus be used to start up Isabelle's jedit IDE via docker/podman on the host display. Currently, only Linux host systems are supported.
