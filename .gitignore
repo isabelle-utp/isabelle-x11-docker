@@ -1,5 +1,6 @@
 /backup
 /bin/diff-work.sh
-/downloads/*.tar.gz
+/devel
+/downloads
 /experiments
 /misc
