@@ -14,4 +14,5 @@
 #
 #:mode=text:encoding=UTF-8:
 
-#$ISABELLE_HOME/../AFP/thys
+# Note that the variable AFP_THYS is set via ENV in the Dockerfile.
+$AFP_THYS

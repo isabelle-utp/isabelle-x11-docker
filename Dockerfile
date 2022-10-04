@@ -37,7 +37,7 @@ ENV PATH="${PATH}:/opt/Isabelle2021-1/bin"
 
 # Add environment variables to locate AFP theories.
 ENV AFP_BASE="/opt/$AFP_RELEASE"
-ENV AFP="$AFP_BASE/thys"
+ENV AFP_THYS="$AFP_BASE/thys"
 
 # Install prerequisites to run isabelle jedit (X11 support).
 RUN apt-get update -y && \
@@ -67,7 +67,7 @@ USER work
 WORKDIR /home/work
 
 # The startup.sh script preforms the following actions:
-#  1. finalise setup by adding the AFP to the components file;
+#  1. patch the $AFP_THYS/ROOTS file according to .patch-afp;
 #  2. execute whatever command is passed via CMD.
 ENTRYPOINT ["/startup.sh"]
 

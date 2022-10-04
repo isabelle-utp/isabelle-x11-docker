@@ -26,9 +26,26 @@ info "${ANSI_BOLD}Tool Version${ANSI_RESET}: $ISABELLE_DIST ($AFP_RELEASE)"
 # info "Please send suggestions and bug reports to ${ANSI_BLUE}frank.zeyda@gmail.com${ANSI_RESET} ."
 
 # Create Isabelle components file (with AFP) if it does not exist.
-# NOTE: Alternatively, we may also create/modify the local ROOTS file.
-if [ ! -f "$HOME/.isabelle/Isabelle2021-1/etc/components" ]; then
-  echo "$AFP" >> $HOME/.isabelle/Isabelle2021-1/etc/components
+# NOTE: Obsolete, since we now adjust the user's ROOTS file instead.
+# if [ ! -f "$HOME/.isabelle/Isabelle2021-1/etc/components" ]; then
+#   echo "$AFP_THYS" >> $HOME/.isabelle/Isabelle2021-1/etc/components
+# fi
+
+# Patch ROOTS file of the AFP if a .patch-afp config file exists.
+# Each line in the .patch-afp file is interpreted as an entry to
+# be removed form the AFP's ROOTS file (i.e. to avoid duplication).
+if [ -f .patch-afp ]; then
+  echo -n -e "Patching $AFP_THYS/ROOTS by removing:"
+  cat .patch-afp |
+  while read ENTRY; do
+    echo -n -e " ${ANSI_RED}$ENTRY${ANSI_RESET}"
+    # Note that 'sed -i ...' fails to due lack of permission
+    # to create a temporary file inside the $AFP_THYS folder.
+    sed "/^$ENTRY\$/d" $AFP_THYS/ROOTS >/tmp/ROOTS
+    cat /tmp/ROOTS >$AFP_THYS/ROOTS
+    rm /tmp/ROOTS
+  done
+  echo
 fi
 
 # Execute command specified by CMD in the Dockerfile.
