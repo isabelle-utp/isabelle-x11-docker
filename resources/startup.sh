@@ -23,7 +23,7 @@ function info {
 
 # Inform the user about the Isabelle & AFP tool versions provided.
 info "${ANSI_BOLD}Tool Version${ANSI_RESET}: $ISABELLE_DIST ($AFP_RELEASE)"
-info "Please send suggestions and bug reports to ${ANSI_BLUE}frank.zeyda@gmail.com${ANSI_RESET} ."
+# info "Please send suggestions and bug reports to ${ANSI_BLUE}frank.zeyda@gmail.com${ANSI_RESET} ."
 
 # Create Isabelle components file (with AFP) if it does not exist.
 # NOTE: Alternatively, we may also create/modify the local ROOTS file.
