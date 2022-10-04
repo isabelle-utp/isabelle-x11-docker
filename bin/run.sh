@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e # exit immediately upon error(s)
+set -e # exit immediately upon errors
 
 # Set hostname of the container to isabelle-x11.
 HOSTNAME="--hostname isabelle-x11"
