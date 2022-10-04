@@ -21,9 +21,12 @@ LABEL version="1.0"
 # Use apt in non-interactive mode throughout.
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Extract the Isabelle and AFP distributions to /opt.
-ADD downloads/$ISABELLE_TAR /opt
-ADD downloads/$AFP_RELEASE.tar.gz /opt
+# Copy extracted Isabelle and AFP distributions to /opt.
+ADD --chown=0:0 downloads/$ISABELLE_DIST /opt/$ISABELLE_DIST
+ADD --chown=0:0 downloads/$AFP_RELEASE   /opt/$AFP_RELEASE
+
+# Make the AFP's ROOTS file writeable for everyone.
+RUN chmod a+rw /opt/$AFP_RELEASE/thys/ROOTS
 
 # Expose image meta-information to the container.
 ENV ISABELLE_DIST="$ISABELLE_DIST"

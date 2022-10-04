@@ -31,11 +31,15 @@ downloads: $(SOFTWARE_DIR)/$(ISABELLE_TAR) \
 $(SOFTWARE_DIR)/$(ISABELLE_TAR):
 	@echo -e "$(ANSI_BLUE)Downloading $(ISABELLE_TAR) ...$(ANSI_RESET)"
 	wget -P $(SOFTWARE_DIR) https://isabelle.in.tum.de/dist/$(ISABELLE_TAR)
+	@echo -e "$(ANSI_BLUE)Extracting $(ISABELLE_TAR) ...$(ANSI_RESET)"
+	cd downloads && tar xzf $(ISABELLE_TAR)
 
 # The below fetches the AFP tar archive from AFP release site.
 $(SOFTWARE_DIR)/$(AFP_RELEASE).tar.gz:
 	@echo -e "$(ANSI_BLUE)Downloading $(AFP_RELEASE) ...$(ANSI_RESET)"
 	wget -P $(SOFTWARE_DIR) https://www.isa-afp.org/release/$(AFP_RELEASE).tar.gz
+	@echo -e "$(ANSI_BLUE)Extracting $(AFP_RELEASE) ...$(ANSI_RESET)"
+	cd downloads && tar xzf $(AFP_RELEASE).tar.gz
 
 # Create work directory from template if it does not already exist.
 create-work: | work
@@ -69,7 +73,6 @@ clean:
 
 # Target to additional remove all downloaded files.
 sanitize: clean
-	rm -f $(SOFTWARE_DIR)/$(ISABELLE_TAR)
-	rm -f $(SOFTWARE_DIR)/$(AFP_RELEASE).tar.gz
+	rm -rf downloads
 
 .PHONY: all downloads create-work image tidy-up release clean sanitize
