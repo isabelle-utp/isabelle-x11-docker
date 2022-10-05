@@ -43,6 +43,8 @@ ENV AFP_THYS="$AFP_BASE/thys"
 RUN apt-get update -y && \
     apt-get install -y less rlwrap unzip && \
     apt-get install -y libfontconfig1 libgomp1 libxext6 libxrender1 libxtst6 libxi6 && \
+    apt-get install -y texlive texlive-latex-extra texlive-science && \
+    apt-get update -y && \
     apt-get clean
 
 # Create a regular work account the image user with UID 1000.
