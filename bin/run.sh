@@ -7,6 +7,9 @@ SCRIPT_DIR=$(dirname -- "$(readlink -f -- "$BASH_SOURCE")")
 # Top-level directory of the repository.
 ROOT_DIR="$SCRIPT_DIR/.."
 
+# Location and version tag of the image on dockerhub.
+IMAGE="docker.io/galoisinc/isabelle-x11:1.0"
+
 # Set hostname of the container to isabelle-x11.
 HOSTNAME="--hostname isabelle-x11"
 
@@ -31,7 +34,7 @@ HOME_EXPORT="-v $ROOT_DIR/work:/home/work"
 echo "Starting isabelle-x11 container, please wait (this may take a minute) ..."
 
 # Execute the isabelle-x11 docker image.
-docker run -it --rm $HOSTNAME $NAMESPACE $HOME_EXPORT $X11_OPTS isabelle-x11 $*
+docker run -it --rm $HOSTNAME $NAMESPACE $HOME_EXPORT $X11_OPTS $IMAGE $*
 
 # Let the user know that his work is not lost ...
 echo "Note that your work persists in the local 'work' subfolder."

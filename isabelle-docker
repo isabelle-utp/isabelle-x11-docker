@@ -4,6 +4,9 @@ set -e # exit immediately upon errors
 # Robust way to obtain the directory in which this script resides.
 SCRIPT_DIR=$(dirname -- "$(readlink -f -- "$BASH_SOURCE")")
 
+# Location and version tag of the image on dockerhub.
+IMAGE="docker.io/galoisinc/isabelle-x11:1.0"
+
 # Set hostname of the container to isabelle-x11.
 HOSTNAME="--hostname isabelle-x11"
 
@@ -28,7 +31,7 @@ HOME_EXPORT="-v $SCRIPT_DIR/work:/home/work"
 echo "Starting isabelle-x11 container, please wait (this may take a minute) ..."
 
 # Execute the isabelle-x11 docker image.
-docker run -it --rm $HOSTNAME $NAMESPACE $HOME_EXPORT $X11_OPTS isabelle-x11 isabelle $*
+docker run -it --rm $HOSTNAME $NAMESPACE $HOME_EXPORT $X11_OPTS $IMAGE isabelle $*
 
 # Let the user know that his work is not lost ...
 echo "Note that your work persists in the local 'work' subfolder."

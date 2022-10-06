@@ -7,6 +7,7 @@
 FROM ubuntu:22.10
 
 # Build arguments passed to this Dockerfile.
+ARG IMAGE_VERSION
 ARG ISABELLE_DIST
 ARG ISABELLE_TAR
 ARG AFP_RELEASE
@@ -14,9 +15,9 @@ ARG AFP_RELEASE
 # Information about this Docker image.
 LABEL maintainer="frank.zeyda@gmail.com"
 LABEL description="Docker image providing Isabelle with X11 support."
+LABEL version="$IMAGE_VERSION"
 LABEL isabelle="$ISABELLE_DIST"
 LABEL afp="$AFP_RELEASE"
-LABEL version="1.0"
 
 # Use apt in non-interactive mode throughout.
 ENV DEBIAN_FRONTEND=noninteractive

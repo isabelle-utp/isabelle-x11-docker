@@ -13,9 +13,16 @@ ISABELLE_TAR  = Isabelle2021-1_linux.tar.gz
 # AFP release of theories to install into the image.
 AFP_RELEASE = afp-2022-10-01
 
+# Repository on dockerhub to be used.
+REPOSITORY = "galoisinc/isabelle-x11"
+
+# Version tag of the image to be built.
+IMAGE_VERSION = "1.0"
+
 # Build arguments for isabelle-x11 image creation.
-BUILD_ARGS = --build-arg ISABELLE_DIST=$(ISABELLE_DIST) \
-             --build-arg ISABELLE_TAR=$(ISABELLE_TAR) \
+BUILD_ARGS = --build-arg IMAGE_VERSION=$(IMAGE_VERSION) \
+             --build-arg ISABELLE_DIST=$(ISABELLE_DIST) \
+             --build-arg ISABELLE_TAR=$(ISABELLE_TAR)   \
              --build-arg AFP_RELEASE=$(AFP_RELEASE)
 
 # Includes variables for ANSI escape sequences to beautify output.
@@ -52,7 +59,8 @@ work:
 # Target to build the isabelle-x11 docker image in the local store.
 image:
 	@echo -e "$(ANSI_BLUE)Creating isabelle-x11 docker image ...$(ANSI_RESET)"
-	docker build $(BUILD_ARGS) -t isabelle-x11 .
+	docker build $(BUILD_ARGS) -t $(REPOSITORY):$(IMAGE_VERSION) .
+	docker tag $(REPOSITORY):$(IMAGE_VERSION) $(REPOSITORY):latest
 
 # Target to tidy up by removing dangling images.
 tidy-up:
@@ -66,6 +74,16 @@ release: clean all
 	rm -f work/.isabelle/$(ISABELLE_DIST)/jedit/activity.log
 	tar czf isabelle-docker-runtime.tar.gz isabelle-docker work
 
+# Login to the galoisinc dockerhub registry.
+login:
+	@echo -e "$(ANSI_BLUE)Logging in to galoisinc on dockerhub ...$(ANSI_RESET)"
+	docker login https://registry-1.docker.io/v2/
+
+# Push built image to the galoisinc dockerhub registry.
+push:
+	@echo -e "$(ANSI_BLUE)Pushing local $(REPOSITORY):$(IMAGE_VERSION) image to dockerhub ...$(ANSI_RESET)"
+	docker push $(REPOSITORY):$(IMAGE_VERSION)
+
 # Target to remove all dynamically generated files.
 clean:
 	rm -rf work
@@ -75,4 +93,4 @@ clean:
 sanitize: clean
 	rm -rf downloads
 
-.PHONY: all downloads create-work image tidy-up release clean sanitize
+.PHONY: all downloads create-work image tidy-up release login push clean sanitize
