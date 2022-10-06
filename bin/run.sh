@@ -1,6 +1,12 @@
 #!/bin/bash
 set -e # exit immediately upon errors
 
+# Robust way to obtain the directory in which this script resides.
+SCRIPT_DIR=$(dirname -- "$(readlink -f -- "$BASH_SOURCE")")
+
+# Top-level directory of the repository.
+ROOT_DIR="$SCRIPT_DIR/.."
+
 # Set hostname of the container to isabelle-x11.
 HOSTNAME="--hostname isabelle-x11"
 
@@ -18,7 +24,7 @@ NAMESPACE="--uidmap 1000:0:1 --uidmap 0:1:1000
 X11_OPTS="-e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix --security-opt label=type:container_runtime_t"
 
 # Maps the local work directory into /home/work inside the container.
-HOME_EXPORT="-v ./work:/home/work"
+HOME_EXPORT="-v $ROOT_DIR/work:/home/work"
 
 # The initial start if the container can be a little slow due to the
 # UID/GUI namespace mapping. (On my laptop, it takes about 30 seconds.)
