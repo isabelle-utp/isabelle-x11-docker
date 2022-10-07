@@ -27,14 +27,14 @@ NAMESPACE="--uidmap 1000:0:1 --uidmap 0:1:1000
 X11_OPTS="-e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix --security-opt label=type:container_runtime_t"
 
 # Maps the local work directory into /home/work inside the container.
-HOME_EXPORT="-v $ROOT_DIR/work:/home/work"
+HOME_EXPORT="$ROOT_DIR/work:/home/work"
 
 # The initial start if the container can be a little slow due to the
 # UID/GUI namespace mapping. (On my laptop, it takes about 30 seconds.)
 echo "Starting isabelle-x11 container, please wait (this may take a minute) ..."
 
 # Execute the isabelle-x11 docker image.
-docker run -it --rm $HOSTNAME $NAMESPACE $HOME_EXPORT $X11_OPTS $IMAGE $*
+docker run -it --rm $HOSTNAME $NAMESPACE -v "$HOME_EXPORT" $X11_OPTS $IMAGE $*
 
 # Let the user know that his work is not lost ...
 echo "Note that your work persists in the local 'work' subfolder."

@@ -17,7 +17,7 @@ function pathmunge {
 }
 
 # Add current directory and its 'bin' subfolder to PATH.
-pathmunge $PWD
-pathmunge $PWD/bin
+pathmunge "$PWD"
+pathmunge "$PWD/bin"
 
 export PATH
