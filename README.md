@@ -7,7 +7,7 @@ Here are a few further features and highlights:
 - A script `isabelle-docker` is provided that can be used as a drop-in replacement for `isabelle` to execute commands within the container as well as start up jedit inside the container i.e. via `isabelle-docker jedit`.
 - Using the script, the home directory of the (regular) user *inside the container* is automatically mapped to a local `work` directory on the host, so that configuration changes and work on theories persist after shutting down the jedit IDE and thereby destroying the container.
 
-The image is based on a recent version of Ubuntu ([22.10, Kinetic Kudu](https://www.omgubuntu.co.uk/2022/08/ubuntu-22-10-release-new-features)) and is with 3.12 GB more on the bulky side. This is, however, primarily due to the size of the Isabelle installation files (1.3 GB) and AFP (~586 MB), as well as texlive installation and packages (1.27 GB). The prerequisite packages for X11 support have actually little impact on the image size.
+The image is based on a recent version of Ubuntu ([22.10, Kinetic Kudu](https://www.omgubuntu.co.uk/2022/08/ubuntu-22-10-release-new-features)) and is with 3.44 GB more on the bulky side. This is, however, primarily due to the size of the Isabelle installation files (1.3 GB) and AFP (~586 MB), as well as texlive installation and packages (1.27 GB). The prerequisite packages for X11 support have actually little impact on the image size.
 
 ## Tool Versions
 
