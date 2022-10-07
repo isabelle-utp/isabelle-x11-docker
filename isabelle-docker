@@ -5,7 +5,7 @@ set -e # exit immediately upon errors
 SCRIPT_DIR=$(dirname -- "$(readlink -f -- "$BASH_SOURCE")")
 
 # Location and version tag of the image on dockerhub.
-# IMAGE="localhost/galoisinc/isabelle-x11:1.0"
+# IMAGE="galoisinc/isabelle-x11:1.0"
 IMAGE="docker.io/galoisinc/isabelle-x11:1.0"
 
 # Set hostname of the container to isabelle-x11.
