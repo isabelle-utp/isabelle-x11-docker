@@ -40,10 +40,17 @@ ENV PATH="${PATH}:/opt/Isabelle2021-1/bin"
 ENV AFP_BASE="/opt/$AFP_RELEASE"
 ENV AFP_THYS="$AFP_BASE/thys"
 
+# Suppresses an 'isabelle jedit' start-up warning
+# due to a refused connection to accessibility bus.
+ENV NO_AT_BRIDGE="1"
+
 # Install prerequisites to run isabelle jedit (X11 support).
+# Note that libcanberra-gtk3-module packagekit-gtk3-module are
+# installed to avoid certain warning messages of isabelle jedit.
+# TODO: Perhaps try and slim down the texlive installation.
 RUN apt-get update -y && \
     apt-get install -y less rlwrap unzip && \
-    apt-get install -y libfontconfig1 libgomp1 libxext6 libxrender1 libxtst6 libxi6 && \
+    apt-get install -y libfontconfig1 libgomp1 libxext6 libxrender1 libxtst6 libxi6 libcanberra-gtk3-module packagekit-gtk3-module && \
     apt-get install -y texlive texlive-latex-extra texlive-science && \
     apt-get update -y && \
     apt-get clean
