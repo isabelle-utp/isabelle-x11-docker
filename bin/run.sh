@@ -32,7 +32,7 @@ HOME_EXPORT="$ROOT_DIR/work:/home/work"
 
 # The initial start if the container can be a little slow due to the
 # UID/GUI namespace mapping. (On my laptop, it takes about 30 seconds.)
-echo "Starting isabelle-x11 container, please wait (this may take a minute) ..."
+echo "Starting isabelle-x11 container (this may take several minutes) ..."
 
 # Execute the isabelle-x11 docker image.
 docker run -it --rm $HOSTNAME $NAMESPACE -v "$HOME_EXPORT" $X11_OPTS $IMAGE $*
