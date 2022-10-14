@@ -27,6 +27,14 @@ X11_OPTS="-e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix --security-opt label=type:
 # Maps the local work directory into /home/work inside the container.
 HOME_EXPORT="$SCRIPT_DIR/work:/home/work"
 
+# Ensure that this script is not executed in the background, as this
+# seems to cause issues with running the container.
+if [[ ! $(ps -o stat= -p $$) =~ "+" ]]; then
+  echo -e "\n-> Script must be run in the foreground. Do not use &."
+  echo -n "Press [RETURN] ... "
+  exit 1
+fi
+
 # The initial start if the container can be a little slow due to the
 # UID/GUI namespace mapping. (On my laptop, it takes about 30 seconds.)
 echo "Starting isabelle-x11 container (this may take several minutes) ..."
