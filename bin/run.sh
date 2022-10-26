@@ -8,8 +8,8 @@ SCRIPT_DIR=$(dirname -- "$(readlink -f -- "$BASH_SOURCE")")
 ROOT_DIR="$SCRIPT_DIR/.."
 
 # Location and version tag of the image on dockerhub.
-# IMAGE="galoisinc/isabelle-x11:1.0"
-IMAGE="docker.io/galoisinc/isabelle-x11:1.0"
+# IMAGE="galoisinc/isabelle-x11:1.1"
+IMAGE="docker.io/galoisinc/isabelle-x11:1.1"
 
 # Set hostname of the container to isabelle-x11.
 HOSTNAME="--hostname isabelle-x11"

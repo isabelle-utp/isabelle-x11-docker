@@ -1,6 +1,6 @@
 # Isabelle docker image with X11 support
 
-This repository contains resources (Dockerfile, scripts, makefile, etc.) to create a docker/podman image with **X11 support** for the current version of the Isabelle theorem prover ([Isabelle2021-1](https://isabelle.in.tum.de/)). The image can thus be used to start up Isabelle's jedit IDE via docker/podman on the host display. Currently, only Linux host systems are supported.
+This repository contains resources (Dockerfile, scripts, makefile, etc.) to create a docker/podman image with **X11 support** for the current version of the Isabelle theorem prover ([Isabelle2022](https://isabelle.in.tum.de/)). The image can thus be used to start up Isabelle's jedit IDE via docker/podman on the host display. Currently, only Linux host systems are supported.
 
 Here are a few further features and highlights:
 - The image includes the entire [Archive of Formal Proofs](https://www.isa-afp.org/) developments, preconfigured in the local user's `ROOTS` file.
@@ -13,9 +13,9 @@ The image is based on a recent version of Ubuntu ([22.10, Kinetic Kudu](https://
 
 Images are public and obtained via the **Galois Inc** organization on [dockerhub](https://hub.docker.com/repositories).
 
-The latest [isabelle-x11](https://hub.docker.com/repository/docker/galoisinc/isabelle-x11) image (version 1.0) provides:
-- [Isabelle2021-1](https://isabelle.in.tum.de/) (December 2021)
-- [afp-2022-10-01.tar.gz](https://www.isa-afp.org/release/afp-2022-10-01.tar.gz) (01 September 2022)
+The latest [isabelle-x11](https://hub.docker.com/repository/docker/galoisinc/isabelle-x11) image (version 1.1) provides:
+- [Isabelle2022](https://isabelle.in.tum.de/) (October 2022)
+- [afp-2022-10-05.tar.gz](https://www.isa-afp.org/release/afp-2022-10-05.tar.gz) (01 September 2022)
 
 ## For Users
 
@@ -37,7 +37,7 @@ To start the Isabelle jedit IDE, simply execute:
 
 `isabelle-docker jedit`
 
-This furthermore opens a `Scratch.thy` theory file inside the image with a simple HOL example theory. Note that the full AFP is at your disposal for import, and implicitly configured as an additional entry in `~/.isabelle/Isabelle2021-1/ROOTS`. If you like to **blank out** certain entries of the AFP (which sometimes is necessary to avoid clashes and duplication with respect to local developments), simply add a file `.patch-afp` under the local `work` folder and add a corresponding line to that file for each entry to be blanked out. When the container starts, a script automatically then patches the `ROOTS` file of the AFP to remove such entries. (Beware, however, of superfluous spaces at the start end end of each entry.)
+This furthermore opens a `Scratch.thy` theory file inside the image with a simple HOL example theory. Note that the full AFP is at your disposal for import, and implicitly configured as an additional entry in `~/.isabelle/Isabelle2022/ROOTS`. If you like to **blank out** certain entries of the AFP (which sometimes is necessary to avoid clashes and duplication with respect to local developments), simply add a file `.patch-afp` under the local `work` folder and add a corresponding line to that file for each entry to be blanked out. When the container starts, a script automatically then patches the `ROOTS` file of the AFP to remove such entries. (Beware, however, of superfluous spaces at the start end end of each entry.)
 
 ## For Developers
 
@@ -68,7 +68,7 @@ Another useful utility script under [bin](https://github.com/isabelle-utp/isabel
 
 ### Start-up Behaviour
 
-When the isabelle-x11 container starts, it automatically executes the [startup.sh](https://github.com/isabelle-utp/isabelle-x11-docker/blob/main/resources/startup.sh) script found under [resources](https://github.com/isabelle-utp/isabelle-x11-docker/blob/main/resources). This prints some informative message about deployed tool versions and, if a `.patch-afp` file is present in the home folder, potentially removes some entries from the `ROOTS` file of the AFP installation under `/opt/afp-...`. Note that in order to disable the *entire* AFP, it is, however, easier to modify the `work/.isabelle/Isabelle2021-1/ROOTS` instead by removing or commenting out the entry `$AFP_THYS` there.
+When the isabelle-x11 container starts, it automatically executes the [startup.sh](https://github.com/isabelle-utp/isabelle-x11-docker/blob/main/resources/startup.sh) script found under [resources](https://github.com/isabelle-utp/isabelle-x11-docker/blob/main/resources). This prints some informative message about deployed tool versions and, if a `.patch-afp` file is present in the home folder, potentially removes some entries from the `ROOTS` file of the AFP installation under `/opt/afp-...`. Note that in order to disable the *entire* AFP, it is, however, easier to modify the `work/.isabelle/Isabelle2022/ROOTS` instead by removing or commenting out the entry `$AFP_THYS` there.
 
 ## Relationship to Isabelle/UTP
 

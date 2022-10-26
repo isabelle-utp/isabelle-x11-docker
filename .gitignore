@@ -1,4 +1,5 @@
 /backup
+/bin/clean-work.sh
 /bin/diff-work.sh
 /devel
 /downloads

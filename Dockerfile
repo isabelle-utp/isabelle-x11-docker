@@ -34,7 +34,7 @@ ENV ISABELLE_DIST="$ISABELLE_DIST"
 ENV AFP_RELEASE="$AFP_RELEASE"
 
 # Add Isabelle installation to PATH environment.
-ENV PATH="${PATH}:/opt/Isabelle2021-1/bin"
+ENV PATH="${PATH}:/opt/Isabelle2022/bin"
 
 # Add environment variables to locate AFP theories.
 ENV AFP_BASE="/opt/$AFP_RELEASE"

@@ -1,0 +1,194 @@
+Log file created on Wed Oct 26 23:12:17 UTC 2022
+IMPORTANT:
+Because updating this file after every log message would kill
+performance, it will be *incomplete* unless you invoke the
+Utilities->Troubleshooting->Update Activity Log on Disk command!
+11:12:17 PM [main] [message] Log: When reporting bugs, please include the following information:
+11:12:17 PM [main] [message] Log: java.version=17.0.4.1
+11:12:17 PM [main] [message] Log: java.vm.version=17.0.4.1+1-LTS
+11:12:17 PM [main] [message] Log: java.vm.name=OpenJDK 64-Bit Server VM
+11:12:17 PM [main] [message] Log: java.runtime.version=17.0.4.1+1-LTS
+11:12:17 PM [main] [message] Log: java.runtime.name=OpenJDK Runtime Environment
+11:12:17 PM [main] [message] Log: java.vendor=Azul Systems, Inc.
+11:12:17 PM [main] [message] Log: java.compiler=null
+11:12:17 PM [main] [message] Log: os.name=Linux
+11:12:17 PM [main] [message] Log: os.version=4.18.0-372.26.1.el8_6.x86_64
+11:12:17 PM [main] [message] Log: os.arch=amd64
+11:12:17 PM [main] [message] Log: user.home=/home/work
+11:12:17 PM [main] [message] Log: java.home=/opt/Isabelle2022/contrib/jdk-17.0.4.1+1/x86_64-linux
+11:12:17 PM [main] [message] Log: java.class.path=/opt/Isabelle2022/contrib/apache-commons-20211211/lib/commons-lang3-3.12.0.jar:/opt/Isabelle2022/contrib/apache-commons-20211211/lib/commons-text-1.9.jar:/opt/Isabelle2022/contrib/flatlaf-2.4/lib/flatlaf-2.4.jar:/opt/Isabelle2022/contrib/isabelle_setup-20221020/lib/isabelle_setup.jar:/opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jedit.jar:/opt/Isabelle2022/contrib/jfreechart-1.5.3/lib/iText-2.1.5.jar:/opt/Isabelle2022/contrib/jfreechart-1.5.3/lib/jfreechart-1.5.3.jar:/opt/Isabelle2022/contrib/jortho-1.0-2/jortho.jar:/opt/Isabelle2022/contrib/kodkodi-1.5.7/jar/antlr-runtime-3.1.1.jar:/opt/Isabelle2022/contrib/kodkodi-1.5.7/jar/kodkod-1.5.jar:/opt/Isabelle2022/contrib/kodkodi-1.5.7/jar/kodkodi-1.5.7.jar:/opt/Isabelle2022/contrib/kodkodi-1.5.7/jar/sat4j-2.3.jar:/opt/Isabelle2022/contrib/postgresql-42.5.0/postgresql-42.5.0.jar:/opt/Isabelle2022/contrib/scala-3.2.0-2/lib/scala-library-2.13.8.jar:/opt/Isabelle2022/contrib/scala-3.2.0-2/lib/scala3-library_3-3.2.0.jar:/opt/Isabelle2022/contrib/scala-3.2.0-2/lib/scala-asm-9.3.0-scala-1.jar:/opt/Isabelle2022/contrib/scala-3.2.0-2/lib/compiler-interface-1.3.5.jar:/opt/Isabelle2022/contrib/scala-3.2.0-2/lib/scala3-interfaces-3.2.0.jar:/opt/Isabelle2022/contrib/scala-3.2.0-2/lib/scala3-compiler_3-3.2.0.jar:/opt/Isabelle2022/contrib/scala-3.2.0-2/lib/tasty-core_3-3.2.0.jar:/opt/Isabelle2022/contrib/scala-3.2.0-2/lib/scala3-staging_3-3.2.0.jar:/opt/Isabelle2022/contrib/scala-3.2.0-2/lib/scala3-tasty-inspector_3-3.2.0.jar:/opt/Isabelle2022/contrib/scala-3.2.0-2/lib/jline-reader-3.19.0.jar:/opt/Isabelle2022/contrib/scala-3.2.0-2/lib/jline-terminal-3.19.0.jar:/opt/Isabelle2022/contrib/scala-3.2.0-2/lib/jline-terminal-jna-3.19.0.jar:/opt/Isabelle2022/contrib/scala-3.2.0-2/lib/jna-5.3.1.jar:/opt/Isabelle2022/contrib/scala-3.2.0-2/lib/scala-parallel-collections_3-1.0.4.jar:/opt/Isabelle2022/contrib/scala-3.2.0-2/lib/scala-parser-combinators_3-2.1.1.jar:/opt/Isabelle2022/contrib/scala-3.2.0-2/lib/scala-swing_3-3.0.0.jar:/opt/Isabelle2022/contrib/scala-3.2.0-2/lib/scala-xml_3-2.1.0.jar:/opt/Isabelle2022/contrib/sqlite-jdbc-3.36.0.3/sqlite-jdbc-3.36.0.3.jar:/opt/Isabelle2022/contrib/xz-java-1.9/lib/xz-1.9.jar:/opt/Isabelle2022/contrib/naproche-20221024/Isabelle/naproche.jar:/opt/Isabelle2022/lib/classes/isabelle.jar:/opt/Isabelle2022/lib/classes/isabelle_graphbrowser.jar
+11:12:17 PM [main] [message] jEdit: starting with command line arguments: -settings=/home/work/.isabelle/Isabelle2022/jedit -noserver -reuseview -nobackground -nosplash -log=9 /home/work/Scratch.thy
+11:12:17 PM [main] [debug] jEdit: before splash screen activation:32 ms
+11:12:17 PM [main] [debug] jEdit: after splash screen activation:33 ms
+11:12:17 PM [main] [debug] MiscUtilities: Saving backup of file "/home/work/.isabelle/Isabelle2022/jedit/activity.log" to "/home/work/.isabelle/Isabelle2022/jedit/settings-backup/activity.log~1~"
+11:12:17 PM [main] [notice] jEdit: jEdit version 5.6.0
+11:12:17 PM [main] [message] jEdit: Settings directory is /home/work/.isabelle/Isabelle2022/jedit
+11:12:17 PM [main] [message] jEdit: jEdit home directory is /opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched
+11:12:18 PM [main] [message] BeanShell: Beanshell Init
+11:12:18 PM [main] [debug] jEdit: Loading site snippet: /opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/properties/jEdit.props
+11:12:18 PM [main] [debug] GUIUtilities: Icon theme set to: tango
+11:12:18 PM [main] [debug] GUIUtilities: Loading icon theme from: jeditresource:/org/gjt/sp/jedit/icons/themes/tango/
+11:12:18 PM [main] [debug] jEdit: initPLAF non-edt old=javax.swing.plaf.metal.MetalLookAndFeel requested=com.formdev.flatlaf.FlatLightLaf new=com.formdev.flatlaf.FlatLightLaf
+11:12:18 PM [main] [debug] ActionSet: Loading actions from jar:file:/opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jedit.jar!/org/gjt/sp/jedit/actions.xml
+11:12:18 PM [main] [debug] DockableWindowManager: Loading dockables from jar:file:/opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jedit.jar!/org/gjt/sp/jedit/dockables.xml
+11:12:18 PM [AWT-EventQueue-0] [debug] EditBus: SearchSettingsChanged[source=null]
+11:12:18 PM [main] [notice] jEdit: Loading plugins from /opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars
+11:12:18 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=LOADED,exit=false,version=0.7,source=/opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/Code2HTML.jar,class=code2html.Code2HTMLPlugin]
+11:12:18 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=LOADED,exit=false,version=1.7.4,source=/opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/CommonControls.jar,class=CommonControlsPlugin]
+11:12:18 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=LOADED,exit=false,version=5.1.4,source=/opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/Console.jar,class=console.ConsolePlugin]
+11:12:18 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=LOADED,exit=false,version=2.4.0,source=/opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/ErrorList.jar,class=errorlist.ErrorListPlugin]
+11:12:18 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=LOADED,exit=false,version=2.5,source=/opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/Highlight.jar,class=gatchan.highlight.HighlightPlugin]
+11:12:18 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=LOADED,exit=false,version=2.7,source=/opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/Navigator.jar,class=ise.plugin.nav.NavigatorPlugin]
+11:12:18 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=LOADED,exit=false,version=5.0,source=/opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/QuickNotepad.jar,class=QuickNotepadPlugin]
+11:12:18 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=LOADED,exit=false,version=1.8,source=/opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/SideKick.jar,class=sidekick.SideKickPlugin]
+11:12:18 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=LOADED,exit=false,version=null,source=/opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/jsr305-3.0.2.jar]
+11:12:18 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=LOADED,exit=false,version=null,source=/opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/kappalayout.jar]
+11:12:18 PM [main] [notice] jEdit: Loading plugins from /home/work/.isabelle/Isabelle2022/jedit/jars
+11:12:18 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=LOADED,exit=false,version=1.0,source=/home/work/.isabelle/Isabelle2022/jedit/jars/isabelle_jedit_base.jar,class=isabelle.jedit_base.Plugin]
+11:12:18 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=LOADED,exit=false,version=11.3,source=/home/work/.isabelle/Isabelle2022/jedit/jars/isabelle_jedit_main.jar,class=isabelle.jedit_main.Plugin]
+11:12:18 PM [main] [message] BufferHistory: Loading /home/work/.isabelle/Isabelle2022/jedit/recent.xml
+11:12:18 PM [main] [message] KillRing: Loading /home/work/.isabelle/Isabelle2022/jedit/killring.xml
+11:12:18 PM [main] [debug] jEdit: initPLAF non-edt old=com.formdev.flatlaf.FlatLightLaf requested=com.formdev.flatlaf.FlatLightLaf new=com.formdev.flatlaf.FlatLightLaf
+11:12:18 PM [main] [debug] jEdit: SOCKS proxy disabled
+11:12:18 PM [main] [debug] jEdit: HTTP proxy disabled
+11:12:18 PM [AWT-EventQueue-0] [debug] EditBus: PropertiesChanged[source=null]
+11:12:18 PM [main] [message] jEdit: Loading mode catalog file /opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/modes/catalog
+11:12:18 PM [main] [debug] jEdit: Loading user mode catalog
+11:12:18 PM [main] [message] jEdit: Loading mode catalog file /home/work/.isabelle/Isabelle2022/jedit/modes/catalog
+11:12:18 PM [main] [debug] PluginJAR: Activating code2html.Code2HTMLPlugin because of startup
+11:12:18 PM [main] [debug] PluginJAR: Opening /opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/Code2HTML.jar
+11:12:18 PM [main] [debug] PluginJAR: Activating console.ConsolePlugin because of startup
+11:12:18 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=ACTIVATED,exit=false,version=0.7,source=/opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/Code2HTML.jar,class=code2html.Code2HTMLPlugin]
+11:12:18 PM [main] [debug] PluginJAR: Opening /opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/Console.jar
+11:12:18 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=plugin.console.ConsolePlugin.menu,source=null]
+11:12:18 PM [main] [debug] ConsolePlugin: Loaded 17 Actions
+11:12:18 PM [main] [debug] PluginJAR: Opening /opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/ErrorList.jar
+11:12:18 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=ACTIVATED,exit=false,version=2.4.0,source=/opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/ErrorList.jar,class=errorlist.ErrorListPlugin]
+11:12:18 PM [main] [debug] PluginJAR: Activating gatchan.highlight.HighlightPlugin because of startup
+11:12:18 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=plugin.console.ConsolePlugin.menu,source=null]
+11:12:18 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=ACTIVATED,exit=false,version=5.1.4,source=/opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/Console.jar,class=console.ConsolePlugin]
+11:12:18 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=plugin.console.ConsolePlugin.menu,source=null]
+11:12:18 PM [main] [debug] PluginJAR: Opening /opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/Highlight.jar
+11:12:18 PM [main] [debug] PluginJAR: Activating ise.plugin.nav.NavigatorPlugin because of startup
+11:12:18 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=ACTIVATED,exit=false,version=2.5,source=/opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/Highlight.jar,class=gatchan.highlight.HighlightPlugin]
+11:12:18 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=plugin.console.ConsolePlugin.menu,source=null]
+11:12:18 PM [main] [debug] PluginJAR: Opening /opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/Navigator.jar
+11:12:18 PM [main] [debug] PluginJAR: Activating sidekick.SideKickPlugin because of startup
+11:12:18 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=ACTIVATED,exit=false,version=2.7,source=/opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/Navigator.jar,class=ise.plugin.nav.NavigatorPlugin]
+11:12:18 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=plugin.console.ConsolePlugin.menu,source=null]
+11:12:18 PM [main] [debug] PluginJAR: Opening /opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/SideKick.jar
+11:12:18 PM [main] [debug] PluginJAR: Activating isabelle.jedit_base.Plugin because of startup
+11:12:18 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=ACTIVATED,exit=false,version=1.8,source=/opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/SideKick.jar,class=sidekick.SideKickPlugin]
+11:12:18 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=plugin.console.ConsolePlugin.menu,source=null]
+11:12:18 PM [main] [debug] PluginJAR: Opening /home/work/.isabelle/Isabelle2022/jedit/jars/isabelle_jedit_base.jar
+11:12:18 PM [main] [debug] Macros: Registered beanshell macro handler
+11:12:18 PM [AWT-EventQueue-0] [debug] jEdit: initPLAF edt old=com.formdev.flatlaf.FlatLightLaf requested=com.formdev.flatlaf.FlatLightLaf new=com.formdev.flatlaf.FlatLightLaf
+11:12:18 PM [AWT-EventQueue-0] [debug] jEdit: SOCKS proxy disabled
+11:12:18 PM [AWT-EventQueue-0] [debug] jEdit: HTTP proxy disabled
+11:12:18 PM [AWT-EventQueue-0] [debug] EditBus: PropertiesChanged[source=null]
+11:12:18 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=ACTIVATED,exit=false,version=1.0,source=/home/work/.isabelle/Isabelle2022/jedit/jars/isabelle_jedit_base.jar,class=isabelle.jedit_base.Plugin]
+11:12:18 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=plugin.console.ConsolePlugin.menu,source=null]
+11:12:18 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=macros,source=null]
+11:12:18 PM [main] [message] BeanShell: Running script /opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/startup/startup.bsh
+11:12:18 PM [main] [notice] jEdit$2: Loading edit mode /opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/modes/text.xml
+11:12:18 PM [main] [debug] String: BeanShell interpreter version 2.0b4-jedit
+11:12:18 PM [main] [debug] jEdit: main done:339 ms
+11:12:18 PM [AWT-EventQueue-0] [message] PerspectiveManager: Loading /home/work/.isabelle/Isabelle2022/jedit/perspective.xml
+11:12:18 PM [AWT-EventQueue-0] [notice] jEdit$2: Loading edit mode /opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/modes/isabelle.xml
+11:12:18 PM [AWT-EventQueue-0] [debug] PluginJAR: Opening /home/work/.isabelle/Isabelle2022/jedit/jars/isabelle_jedit_main.jar
+11:12:19 PM [AWT-EventQueue-0] [debug] jEdit: initPLAF edt old=com.formdev.flatlaf.FlatLightLaf requested=com.formdev.flatlaf.FlatLightLaf new=com.formdev.flatlaf.FlatLightLaf
+11:12:19 PM [AWT-EventQueue-0] [debug] jEdit: SOCKS proxy disabled
+11:12:19 PM [AWT-EventQueue-0] [debug] jEdit: HTTP proxy disabled
+11:12:19 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=PROPERTIES_CHANGED,view=null,source=Scratch.thy (~/)]
+11:12:19 PM [AWT-EventQueue-0] [debug] EditBus: PropertiesChanged[source=null]
+11:12:19 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=PROPERTIES_CHANGED,view=null,source=Scratch.thy (~/)]
+11:12:19 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=CREATED,view=null,source=Scratch.thy (~/)]
+11:12:19 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOAD_STARTED,view=null,source=Scratch.thy (~/)]
+11:12:19 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOADED,view=null,source=Scratch.thy (~/)]
+11:12:19 PM [AWT-EventQueue-0] [debug] BufferSet: 1219058441: addBufferSetListener org.gjt.sp.jedit.EditPane[inactive]
+11:12:19 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
+11:12:19 PM [AWT-EventQueue-0] [debug] BufferSet: 1219058441 addBufferAt(Scratch.thy (~/),-1)
+11:12:19 PM [AWT-EventQueue-0] [debug] BufferSet: 1219058441: Buffer added Scratch.thy (~/) at 0
+11:12:19 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=CREATED,source=org.gjt.sp.jedit.EditPane[inactive]]
+11:12:19 PM [AWT-EventQueue-0] [debug] BufferSet: 1219058441 addBufferAt(Scratch.thy (~/),0)
+11:12:19 PM [AWT-EventQueue-0] [debug] BufferSet: 1219058441 addBufferAt(Scratch.thy (~/),1)
+11:12:19 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=CREATED,source=org.gjt.sp.jedit.View[active]]
+11:12:19 PM [AWT-EventQueue-0] [debug] SideKickParsedData: Setting parsed data of org.gjt.sp.jedit.View[active] to sidekick.SideKickParsedData@45baae75
+11:12:19 PM [AWT-EventQueue-0] [debug] EditBus: SideKickUpdate[source=null]
+11:12:20 PM [AWT-EventQueue-0] [debug] EditBus: EditorStarted[source=null]
+11:12:20 PM [AWT-EventQueue-0] [debug] jEdit: initPLAF edt old=com.formdev.flatlaf.FlatLightLaf requested=com.formdev.flatlaf.FlatLightLaf new=com.formdev.flatlaf.FlatLightLaf
+11:12:20 PM [AWT-EventQueue-0] [debug] jEdit: SOCKS proxy disabled
+11:12:20 PM [AWT-EventQueue-0] [debug] jEdit: HTTP proxy disabled
+11:12:20 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=PROPERTIES_CHANGED,view=null,source=Scratch.thy (~/)]
+11:12:20 PM [AWT-EventQueue-0] [debug] EditBus: PropertiesChanged[source=null]
+11:12:20 PM [AWT-EventQueue-0] [message] BufferHistory: Saving /home/work/.isabelle/Isabelle2022/jedit/recent.xml
+11:12:20 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "/home/work/.isabelle/Isabelle2022/jedit/recent.xml" to "/home/work/.isabelle/Isabelle2022/jedit/settings-backup/recent.xml~1~"
+11:12:20 PM [AWT-EventQueue-0] [message] KillRing: Saving /home/work/.isabelle/Isabelle2022/jedit/killring.xml
+11:12:20 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "/home/work/.isabelle/Isabelle2022/jedit/killring.xml" to "/home/work/.isabelle/Isabelle2022/jedit/settings-backup/killring.xml~1~"
+11:12:20 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "/home/work/.isabelle/Isabelle2022/jedit/properties" to "/home/work/.isabelle/Isabelle2022/jedit/settings-backup/properties~1~"
+11:12:20 PM [AWT-EventQueue-0] [debug] jEdit: initPLAF edt old=com.formdev.flatlaf.FlatLightLaf requested=com.formdev.flatlaf.FlatLightLaf new=com.formdev.flatlaf.FlatLightLaf
+11:12:20 PM [AWT-EventQueue-0] [debug] jEdit: SOCKS proxy disabled
+11:12:20 PM [AWT-EventQueue-0] [debug] jEdit: HTTP proxy disabled
+11:12:20 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=PROPERTIES_CHANGED,view=null,source=Scratch.thy (~/)]
+11:12:20 PM [AWT-EventQueue-0] [debug] EditBus: PropertiesChanged[source=null]
+11:12:20 PM [AWT-EventQueue-0] [message] jEdit: Startup complete: 2204 ms
+11:12:20 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=ACTIVATED,exit=false,version=11.3,source=/home/work/.isabelle/Isabelle2022/jedit/jars/isabelle_jedit_main.jar,class=isabelle.jedit_main.Plugin]
+11:12:20 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=plugin.console.ConsolePlugin.menu,source=null]
+11:12:20 PM [AWT-EventQueue-0] [debug] SideKickParsedData: Setting parsed data of org.gjt.sp.jedit.View[active] to sidekick.SideKickParsedData@16da9334
+11:12:20 PM [AWT-EventQueue-0] [debug] EditBus: SideKickUpdate[source=null]
+11:12:20 PM [AWT-EventQueue-0] [debug] DockableWindowManager: Loading dockables from jeditresource:/isabelle_jedit_main.jar!/dockables.xml
+11:12:20 PM [AWT-EventQueue-0] [debug] EditBus: DockableWindowUpdate[what=ACTIVATED,dockable=isabelle-output,source=isabelle.jedit.PIDE_Docking_Framework$$anon$1[,0,38,1797x971,invalid,layout=org.gjt.sp.jedit.gui.DockableLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]]
+11:12:20 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
+11:12:20 PM [AWT-EventQueue-0] [debug] jEdit: checkBufferStatus for all buffers
+11:12:20 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+11:12:20 PM [AWT-EventQueue-0] [debug] JEditTextArea: InputMethodSupport is activated
+11:12:21 PM [Isabelle.thread-1] [debug] JARClassLoader: Would have returned null for getResource(META-INF/services/java.sql.Driver)
+11:12:21 PM [Isabelle.thread-1] [debug] JARClassLoader: returning(jar:file:/opt/Isabelle2022/contrib/postgresql-42.5.0/postgresql-42.5.0.jar!/META-INF/services/java.sql.Driver)
+11:12:23 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=PROPERTIES_CHANGED,view=null,source=Scratch.thy (~/)]
+11:12:36 PM [AWT-EventQueue-0] [debug] EditBus: PositionChanging[what=POSITION_CHANGING,source=org.gjt.sp.jedit.EditPane[active]]
+11:12:42 PM [AWT-EventQueue-0] [debug] EditBus: EditorExitRequested[source=org.gjt.sp.jedit.View[active]]
+11:12:42 PM [AWT-EventQueue-0] [message] PerspectiveManager: Saving /home/work/.isabelle/Isabelle2022/jedit/perspective.xml
+11:12:42 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "/home/work/.isabelle/Isabelle2022/jedit/perspective.xml" to "/home/work/.isabelle/Isabelle2022/jedit/settings-backup/perspective.xml~1~"
+11:12:42 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+11:12:42 PM [AWT-EventQueue-0] [debug] EditBus: EditorExiting[source=null]
+11:12:42 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=CLOSED,source=org.gjt.sp.jedit.View[active]]
+11:12:42 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=recent-files,source=null]
+11:12:42 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=DESTROYED,source=org.gjt.sp.jedit.EditPane[active]]
+11:12:42 PM [AWT-EventQueue-0] [debug] BufferSet: 1219058441: Buffer removed Scratch.thy (~/)
+11:12:42 PM [AWT-EventQueue-0] [debug] BufferSetManager: Buffer:Scratch.thy (~/) is in no bufferSet anymore, closing it
+11:12:42 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=DEACTIVATED,exit=true,version=0.7,source=/opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/Code2HTML.jar,class=code2html.Code2HTMLPlugin]
+11:12:42 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=plugin.console.ConsolePlugin.menu,source=null]
+11:12:42 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=UNLOADED,exit=true,version=0.7,source=/opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/Code2HTML.jar,class=code2html.Code2HTMLPlugin]
+11:12:42 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=plugin.console.ConsolePlugin.menu,source=null]
+11:12:42 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=UNLOADED,exit=true,version=1.7.4,source=/opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/CommonControls.jar,class=CommonControlsPlugin]
+11:12:42 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=plugin.console.ConsolePlugin.menu,source=null]
+11:12:42 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=DEACTIVATED,exit=true,version=5.1.4,source=/opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/Console.jar,class=console.ConsolePlugin]
+11:12:42 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=UNLOADED,exit=true,version=5.1.4,source=/opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/Console.jar,class=console.ConsolePlugin]
+11:12:42 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=DEACTIVATED,exit=true,version=2.4.0,source=/opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/ErrorList.jar,class=errorlist.ErrorListPlugin]
+11:12:42 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=UNLOADED,exit=true,version=2.4.0,source=/opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/ErrorList.jar,class=errorlist.ErrorListPlugin]
+11:12:42 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=DEACTIVATED,exit=true,version=2.5,source=/opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/Highlight.jar,class=gatchan.highlight.HighlightPlugin]
+11:12:42 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=UNLOADED,exit=true,version=2.5,source=/opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/Highlight.jar,class=gatchan.highlight.HighlightPlugin]
+11:12:42 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=DEACTIVATED,exit=true,version=2.7,source=/opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/Navigator.jar,class=ise.plugin.nav.NavigatorPlugin]
+11:12:42 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=UNLOADED,exit=true,version=2.7,source=/opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/Navigator.jar,class=ise.plugin.nav.NavigatorPlugin]
+11:12:42 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=UNLOADED,exit=true,version=5.0,source=/opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/QuickNotepad.jar,class=QuickNotepadPlugin]
+11:12:42 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=DEACTIVATED,exit=true,version=1.8,source=/opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/SideKick.jar,class=sidekick.SideKickPlugin]
+11:12:42 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=UNLOADED,exit=true,version=1.8,source=/opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/SideKick.jar,class=sidekick.SideKickPlugin]
+11:12:42 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=UNLOADED,exit=true,version=null,source=/opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/jsr305-3.0.2.jar]
+11:12:42 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=UNLOADED,exit=true,version=null,source=/opt/Isabelle2022/contrib/jedit-20211103/jedit5.6.0-patched/jars/kappalayout.jar]
+11:12:42 PM [AWT-EventQueue-0] [debug] jEdit: initPLAF edt old=com.formdev.flatlaf.FlatLightLaf requested=com.formdev.flatlaf.FlatLightLaf new=com.formdev.flatlaf.FlatLightLaf
+11:12:42 PM [AWT-EventQueue-0] [debug] jEdit: SOCKS proxy disabled
+11:12:42 PM [AWT-EventQueue-0] [debug] jEdit: HTTP proxy disabled
+11:12:42 PM [AWT-EventQueue-0] [debug] EditBus: PropertiesChanged[source=null]
+11:12:42 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=DEACTIVATED,exit=true,version=1.0,source=/home/work/.isabelle/Isabelle2022/jedit/jars/isabelle_jedit_base.jar,class=isabelle.jedit_base.Plugin]
+11:12:42 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=UNLOADED,exit=true,version=1.0,source=/home/work/.isabelle/Isabelle2022/jedit/jars/isabelle_jedit_base.jar,class=isabelle.jedit_base.Plugin]
+11:12:42 PM [AWT-EventQueue-0] [debug] jEdit: initPLAF edt old=com.formdev.flatlaf.FlatLightLaf requested=com.formdev.flatlaf.FlatLightLaf new=com.formdev.flatlaf.FlatLightLaf
+11:12:42 PM [AWT-EventQueue-0] [debug] jEdit: SOCKS proxy disabled
+11:12:42 PM [AWT-EventQueue-0] [debug] jEdit: HTTP proxy disabled
+11:12:42 PM [AWT-EventQueue-0] [debug] EditBus: PropertiesChanged[source=null]
+11:12:42 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=DEACTIVATED,exit=true,version=11.3,source=/home/work/.isabelle/Isabelle2022/jedit/jars/isabelle_jedit_main.jar,class=isabelle.jedit_main.Plugin]
+11:12:42 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=UNLOADED,exit=true,version=11.3,source=/home/work/.isabelle/Isabelle2022/jedit/jars/isabelle_jedit_main.jar,class=isabelle.jedit_main.Plugin]
+11:12:42 PM [AWT-EventQueue-0] [message] BufferHistory: Saving /home/work/.isabelle/Isabelle2022/jedit/recent.xml
+11:12:42 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "/home/work/.isabelle/Isabelle2022/jedit/recent.xml" to "/home/work/.isabelle/Isabelle2022/jedit/settings-backup/recent.xml~1~"
+11:12:42 PM [AWT-EventQueue-0] [message] KillRing: Saving /home/work/.isabelle/Isabelle2022/jedit/killring.xml
+11:12:42 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "/home/work/.isabelle/Isabelle2022/jedit/killring.xml" to "/home/work/.isabelle/Isabelle2022/jedit/settings-backup/killring.xml~1~"
+11:12:42 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "/home/work/.isabelle/Isabelle2022/jedit/properties" to "/home/work/.isabelle/Isabelle2022/jedit/settings-backup/properties~1~"

@@ -7,17 +7,17 @@
 SOFTWARE_DIR = downloads
 
 # Distribution of Isabelle to install into the image.
-ISABELLE_DIST = Isabelle2021-1
-ISABELLE_TAR  = Isabelle2021-1_linux.tar.gz
+ISABELLE_DIST = Isabelle2022
+ISABELLE_TAR  = Isabelle2022_linux.tar.gz
 
 # AFP release of theories to install into the image.
-AFP_RELEASE = afp-2022-10-01
+AFP_RELEASE = afp-2022-10-05
 
 # Repository on dockerhub to be used.
 REPOSITORY = "galoisinc/isabelle-x11"
 
 # Version tag of the image to be built.
-IMAGE_VERSION = "1.0"
+IMAGE_VERSION = "1.1"
 
 # Build arguments for isabelle-x11 image creation.
 BUILD_ARGS = --build-arg IMAGE_VERSION=$(IMAGE_VERSION) \

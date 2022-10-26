@@ -27,8 +27,8 @@ info "${ANSI_BOLD}Tool Version${ANSI_RESET}: $ISABELLE_DIST ($AFP_RELEASE)"
 
 # Create Isabelle components file (with AFP) if it does not exist.
 # NOTE: Obsolete, since we now adjust the user's ROOTS file instead.
-# if [ ! -f "$HOME/.isabelle/Isabelle2021-1/etc/components" ]; then
-#   echo "$AFP_THYS" >> $HOME/.isabelle/Isabelle2021-1/etc/components
+# if [ ! -f "$HOME/.isabelle/Isabelle2022/etc/components" ]; then
+#   echo "$AFP_THYS" >> $HOME/.isabelle/Isabelle2022/etc/components
 # fi
 
 # Patch ROOTS file of the AFP if a .patch-afp config file exists.
