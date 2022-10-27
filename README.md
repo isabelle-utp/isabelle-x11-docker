@@ -7,7 +7,7 @@ Here are a few further features and highlights:
 - A script `isabelle-docker` is provided that can be used as a drop-in replacement for `isabelle` to execute commands within the container as well as start up jedit inside the container i.e. via `isabelle-docker jedit`.
 - Using the script, the home directory of the (regular) user *inside the container* is automatically mapped to a local `work` directory on the host, so that configuration changes and work on theories persist after shutting down the jedit IDE and thereby destroying the container.
 
-The image is based on a recent version of Ubuntu ([22.10, Kinetic Kudu](https://www.omgubuntu.co.uk/2022/08/ubuntu-22-10-release-new-features)) and is with 3.44 GB more on the bulky side. This is, however, primarily due to the size of the Isabelle installation files (1.3 GB) and AFP (~586 MB), as well as texlive installation and packages (1.27 GB). The prerequisite packages for X11 support have actually little impact on the image size.
+The image is based on a recent version of Ubuntu ([22.10, Kinetic Kudu](https://www.omgubuntu.co.uk/2022/08/ubuntu-22-10-release-new-features)) and is with 3.89 GB more on the bulky side. This is, however, primarily due to the size of the Isabelle installation files (1.6 GB) and AFP (441 MB), as well as texlive installation and packages (~1.27 GB). The prerequisite packages for X11 support have actually little impact on the image size.
 
 ## Tool Versions
 
@@ -44,8 +44,6 @@ This furthermore opens a `Scratch.thy` theory file inside the image with a simpl
 Developers may be interested how image creation proceeds (for users this is not relevant, since the image is already being made available through [dockerhub](https://hub.docker.com/repository/docker/galoisinc/isabelle-x11), as explained above). In addition to the [Dockerfile](https://github.com/isabelle-utp/isabelle-x11-docker/blob/main/Dockerfile), the repository also includes a [makefile](https://github.com/isabelle-utp/isabelle-x11-docker/blob/main/makefile) that by and large drives the image creation process, downloading and extracting the deployed Isabelle and AFP archives from the web.
 
 The makefile provides the following targets (`all` is the default target):
-
-**REVIEWED UNTIL HERE**
 
 | Target         | Description |
 | -------------- | ----------- |
