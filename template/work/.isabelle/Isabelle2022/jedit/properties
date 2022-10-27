@@ -1,5 +1,5 @@
 #jEdit properties
-#Wed Oct 26 23:12:42 UTC 2022
+#Thu Oct 27 00:10:21 UTC 2022
 Combined\ Options.x=50
 Combined\ Options.y=50
 Global\ Options.last=general
@@ -86,7 +86,7 @@ view.gutter.markerColor=\#ffccffcc
 view.gutter.noFocusBorderColor=\#ffffffff
 view.gutter.selectionAreaBgColor=\#ffdbdbdb
 view.gutter.structureHighlightColor=\#ff666699
-view.height=1093
+view.height=984
 view.lineHighlightColor=\#ffffffe0
 view.multipleSelectionColor=\#ffccffcc
 view.pageBreaksColor=\#ff8080ff
@@ -104,7 +104,7 @@ view.status.show-caret-offset=true
 view.status.show-caret-virtual=true
 view.structureHighlightColor=\#ff000000
 view.toolbar.floatable=false
-view.width=1797
+view.width=1730
 view.wrapGuideColor=\#ff8080ff
-view.x=64
-view.y=45
+view.x=31
+view.y=52
